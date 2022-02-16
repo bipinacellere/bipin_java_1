@@ -429,6 +429,9 @@ public class CrawlController {
      * Wait until this crawling session finishes.
      */
     public void waitUntilFinish() {
+        if (finished) {
+                    return;
+                }
         while (!finished) {
             synchronized (waitingLock) {
                 if (config.isHaltOnError()) {
