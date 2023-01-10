@@ -17,6 +17,7 @@
 
 package edu.uci.ics.crawler4j.crawler;
 
+
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
